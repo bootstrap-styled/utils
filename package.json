@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-styled-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Library bootstrap-styled-utils description",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-utils.es.js",

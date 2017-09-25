@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.6] - 2017-09-25
+
+- Added dummy default export.
+
 ## [0.0.5] - 2017-09-25
 
 - Removed default exports for all exports.

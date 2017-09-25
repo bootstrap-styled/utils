@@ -11,3 +11,6 @@ export {
 export { default as parseTransition } from './parseTransition';
 export { default as unitUtils } from './unitUtils';
 
+const dummy = {};
+export default dummy;
+
