@@ -1,4 +1,4 @@
-export {
+import {
   conditionallyUpdateScrollbar,
   getOriginalBodyPadding,
   getScrollbarWidth,
@@ -8,5 +8,19 @@ export {
   tetherAttachements,
   toHashCode,
 } from './tools';
-export { default as parseTransition } from './parseTransition';
-export { default as unitUtils } from './unitUtils';
+import parseTransition from './parseTransition';
+import unitUtils from './unitUtils';
+
+export default {
+  conditionallyUpdateScrollbar,
+  getOriginalBodyPadding,
+  getScrollbarWidth,
+  getTetherAttachments,
+  isBodyOverflowing,
+  setScrollbarWidth,
+  tetherAttachements,
+  toHashCode,
+  parseTransition,
+  unitUtils,
+};
+
