@@ -34,6 +34,12 @@ bootstrap-styled-utils are utils function used in our bootstrap-styled component
   
 ## Utilities
 
+  - obj `unitUtils`
+    - const `UNIT`: `{ EM, REM, PX, PERCENT }`: constants
+    - obj `math`: `{ addition, subtract, multiply, divide }`: math operation
+    - fn `detectUnit`: detect the unit of a value
+    - fn `rmUnit`: remove the unit from a value
+    - fn `toPercent`: convert to percentage
   - fn `parseTransition`: return a transitionList `[{ property, duration, timingFunction, delay }]` from a css transition rule.
   - fn `toHashCode`: return a hash code.
   - fn `getTetherAttachment`: return attachement `{ attachment, tragetAttachment }` from position.
