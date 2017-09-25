@@ -144,5 +144,187 @@ function parseTransition(transitions) {
   return transitionList;
 }
 
-export { parseTransition, getTetherAttachments, tetherAttachements, getScrollbarWidth, setScrollbarWidth, isBodyOverflowing, getOriginalBodyPadding, conditionallyUpdateScrollbar, toHashCode };
+var asyncGenerator = function () {
+  function AwaitValue(value) {
+    this.value = value;
+  }
+
+  function AsyncGenerator(gen) {
+    var front, back;
+
+    function send(key, arg) {
+      return new Promise(function (resolve, reject) {
+        var request = {
+          key: key,
+          arg: arg,
+          resolve: resolve,
+          reject: reject,
+          next: null
+        };
+
+        if (back) {
+          back = back.next = request;
+        } else {
+          front = back = request;
+          resume(key, arg);
+        }
+      });
+    }
+
+    function resume(key, arg) {
+      try {
+        var result = gen[key](arg);
+        var value = result.value;
+
+        if (value instanceof AwaitValue) {
+          Promise.resolve(value.value).then(function (arg) {
+            resume("next", arg);
+          }, function (arg) {
+            resume("throw", arg);
+          });
+        } else {
+          settle(result.done ? "return" : "normal", result.value);
+        }
+      } catch (err) {
+        settle("throw", err);
+      }
+    }
+
+    function settle(type, value) {
+      switch (type) {
+        case "return":
+          front.resolve({
+            value: value,
+            done: true
+          });
+          break;
+
+        case "throw":
+          front.reject(value);
+          break;
+
+        default:
+          front.resolve({
+            value: value,
+            done: false
+          });
+          break;
+      }
+
+      front = front.next;
+
+      if (front) {
+        resume(front.key, front.arg);
+      } else {
+        back = null;
+      }
+    }
+
+    this._invoke = send;
+
+    if (typeof gen.return !== "function") {
+      this.return = undefined;
+    }
+  }
+
+  if (typeof Symbol === "function" && Symbol.asyncIterator) {
+    AsyncGenerator.prototype[Symbol.asyncIterator] = function () {
+      return this;
+    };
+  }
+
+  AsyncGenerator.prototype.next = function (arg) {
+    return this._invoke("next", arg);
+  };
+
+  AsyncGenerator.prototype.throw = function (arg) {
+    return this._invoke("throw", arg);
+  };
+
+  AsyncGenerator.prototype.return = function (arg) {
+    return this._invoke("return", arg);
+  };
+
+  return {
+    wrap: function (fn) {
+      return function () {
+        return new AsyncGenerator(fn.apply(this, arguments));
+      };
+    },
+    await: function (value) {
+      return new AwaitValue(value);
+    }
+  };
+}();
+
+
+
+
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var UnitUtils = function UnitUtils() {
+  var _this = this;
+  classCallCheck(this, UnitUtils);
+  this.UNIT = {
+    EM: 'em',
+    REM: 'rem',
+    PX: 'px',
+    PERCENT: '%'
+  };
+  this.math = {
+    addition: function addition(a, b) {
+      var unit = this.detectUnit(a) || this.detectUnit(b);
+      return this.rmUnit(a) + this.rmUnit(b) + unit;
+    }.bind(this),
+    subtract: function subtract(a, b) {
+      var unit = this.detectUnit(a) || this.detectUnit(b);
+      return this.rmUnit(a) - this.rmUnit(b) + unit;
+    }.bind(this),
+    multiply: function multiply(a, b) {
+      var unit = this.detectUnit(a) || this.detectUnit(b);
+      return this.rmUnit(a) * this.rmUnit(b) + unit;
+    }.bind(this),
+    divide: function divide(a, b) {
+      var unit = this.detectUnit(a) || this.detectUnit(b);
+      return this.rmUnit(a) / this.rmUnit(b) + unit;
+    }.bind(this)
+  };
+  this.detectUnit = function (value) {
+    var ext = void 0;
+    var valueStr = value.toString();
+    if (valueStr.match(_this.UNIT.PX)) {
+      ext = _this.UNIT.PX;
+    } else if (valueStr.match(_this.UNIT.REM)) {
+      ext = _this.UNIT.REM;
+    } else if (valueStr.match(_this.UNIT.EM)) {
+      ext = _this.UNIT.EM;
+    } else if (valueStr.match(_this.UNIT.PERCENT)) {
+      ext = _this.UNIT.PERCENT;
+    } else if (!isNaN(value)) {
+      return null;
+    } else {
+      throw new Error('detectUnit can\'t find unit for ' + value);
+    }
+    return ext;
+  };
+  this.rmUnit = function (value, unit) {
+    var valueStr = value.toString();
+    var ext = unit || _this.detectUnit(valueStr);
+    var number = valueStr.replace(ext, '');
+    return parseFloat(number);
+  };
+  this.toPercent = function (value) {
+    var total = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 100;
+    var decimal = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 2;
+    return '' + Math.floor(value / total * 100 * Math.pow(10, decimal)) / Math.pow(10, decimal) + _this.UNIT.PERCENT;
+  };
+};
+var index = new UnitUtils();
+
+export { parseTransition, index as unitUtils, getTetherAttachments, tetherAttachements, getScrollbarWidth, setScrollbarWidth, isBodyOverflowing, getOriginalBodyPadding, conditionallyUpdateScrollbar, toHashCode };
 //# sourceMappingURL=bootstrap-styled-utils.es.js.map

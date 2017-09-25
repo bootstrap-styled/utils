@@ -14,7 +14,9 @@ bootstrap-styled-utils are utils function used in our bootstrap-styled component
 
 ## Table of Contents
 
+  - [Installation](#installation)
   - [Changelog](#changelog)
+  - [Utilities](#utilities)
   - [Reminders](#reminders)
   - [Quick start](#quick-start)
   - [Release](#release)
@@ -22,12 +24,22 @@ bootstrap-styled-utils are utils function used in our bootstrap-styled component
 
 ---
 
+## Installation
+
+    npm install git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git --save
+
 ## Changelog
 
   - View [Changelog](CHANGELOG.md)
   
 ## Utilities
 
+  - obj `unitUtils`
+    - const `UNIT`: `{ EM, REM, PX, PERCENT }`: constants
+    - obj `math`: `{ addition, subtract, multiply, divide }`: math operation
+    - fn `detectUnit`: detect the unit of a value
+    - fn `rmUnit`: remove the unit from a value
+    - fn `toPercent`: convert to percentage
   - fn `parseTransition`: return a transitionList `[{ property, duration, timingFunction, delay }]` from a css transition rule.
   - fn `toHashCode`: return a hash code.
   - fn `getTetherAttachment`: return attachement `{ attachment, tragetAttachment }` from position.
