@@ -3,7 +3,7 @@
  * @param transitions
  * @returns {Array} will return an array of transition.
  */
-export default function parseTransition(transitions) {
+const parseTransition = (transitions) => {
   if (!transitions) {
     return [];
   }
@@ -37,4 +37,6 @@ export default function parseTransition(transitions) {
     };
   });
   return transitionList;
-}
+};
+
+export default parseTransition;
