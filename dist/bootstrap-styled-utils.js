@@ -332,16 +332,16 @@ var UnitUtils = function UnitUtils() {
 };
 var index = new UnitUtils();
 
+exports.conditionallyUpdateScrollbar = conditionallyUpdateScrollbar;
+exports.getOriginalBodyPadding = getOriginalBodyPadding;
+exports.getScrollbarWidth = getScrollbarWidth;
+exports.getTetherAttachments = getTetherAttachments;
+exports.isBodyOverflowing = isBodyOverflowing;
+exports.setScrollbarWidth = setScrollbarWidth;
+exports.tetherAttachements = tetherAttachements;
+exports.toHashCode = toHashCode;
 exports.parseTransition = parseTransition;
 exports.unitUtils = index;
-exports.getTetherAttachments = getTetherAttachments;
-exports.tetherAttachements = tetherAttachements;
-exports.getScrollbarWidth = getScrollbarWidth;
-exports.setScrollbarWidth = setScrollbarWidth;
-exports.isBodyOverflowing = isBodyOverflowing;
-exports.getOriginalBodyPadding = getOriginalBodyPadding;
-exports.conditionallyUpdateScrollbar = conditionallyUpdateScrollbar;
-exports.toHashCode = toHashCode;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
