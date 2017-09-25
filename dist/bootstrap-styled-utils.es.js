@@ -326,5 +326,8 @@ var UnitUtils = function UnitUtils() {
 };
 var index = new UnitUtils();
 
+var dummy = {};
+
 export { conditionallyUpdateScrollbar, getOriginalBodyPadding, getScrollbarWidth, getTetherAttachments, isBodyOverflowing, setScrollbarWidth, tetherAttachements, toHashCode, parseTransition, index as unitUtils };
+export default dummy;
 //# sourceMappingURL=bootstrap-styled-utils.es.js.map

@@ -332,6 +332,9 @@ var UnitUtils = function UnitUtils() {
 };
 var index = new UnitUtils();
 
+var dummy = {};
+
+exports['default'] = dummy;
 exports.conditionallyUpdateScrollbar = conditionallyUpdateScrollbar;
 exports.getOriginalBodyPadding = getOriginalBodyPadding;
 exports.getScrollbarWidth = getScrollbarWidth;
