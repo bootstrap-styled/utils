@@ -37,6 +37,6 @@ const parseTransition = (transitions) => {
     };
   });
   return transitionList;
-}
+};
 
 export default parseTransition;
