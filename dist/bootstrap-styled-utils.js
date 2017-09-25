@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global['bootstrap-styled-utils'] = factory());
-}(this, (function () { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global['bootstrap-styled-utils'] = {})));
+}(this, (function (exports) { 'use strict';
 
 function getTetherAttachments(placement) {
   switch (placement) {
@@ -120,7 +120,7 @@ function toHashCode(str) {
   return hash;
 }
 
-function parseTransition(transitions) {
+var parseTransition = function parseTransition(transitions) {
   if (!transitions) {
     return [];
   }
@@ -148,7 +148,7 @@ function parseTransition(transitions) {
     };
   });
   return transitionList;
-}
+};
 
 var asyncGenerator = function () {
   function AwaitValue(value) {
@@ -330,22 +330,20 @@ var UnitUtils = function UnitUtils() {
     return '' + Math.floor(value / total * 100 * Math.pow(10, decimal)) / Math.pow(10, decimal) + _this.UNIT.PERCENT;
   };
 };
-var unitUtils = new UnitUtils();
+var index = new UnitUtils();
 
-var index = {
-  conditionallyUpdateScrollbar: conditionallyUpdateScrollbar,
-  getOriginalBodyPadding: getOriginalBodyPadding,
-  getScrollbarWidth: getScrollbarWidth,
-  getTetherAttachments: getTetherAttachments,
-  isBodyOverflowing: isBodyOverflowing,
-  setScrollbarWidth: setScrollbarWidth,
-  tetherAttachements: tetherAttachements,
-  toHashCode: toHashCode,
-  parseTransition: parseTransition,
-  unitUtils: unitUtils
-};
+exports.conditionallyUpdateScrollbar = conditionallyUpdateScrollbar;
+exports.getOriginalBodyPadding = getOriginalBodyPadding;
+exports.getScrollbarWidth = getScrollbarWidth;
+exports.getTetherAttachments = getTetherAttachments;
+exports.isBodyOverflowing = isBodyOverflowing;
+exports.setScrollbarWidth = setScrollbarWidth;
+exports.tetherAttachements = tetherAttachements;
+exports.toHashCode = toHashCode;
+exports.parseTransition = parseTransition;
+exports.unitUtils = index;
 
-return index;
+Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 //# sourceMappingURL=bootstrap-styled-utils.js.map

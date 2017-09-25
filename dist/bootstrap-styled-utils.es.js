@@ -114,7 +114,7 @@ function toHashCode(str) {
   return hash;
 }
 
-function parseTransition(transitions) {
+var parseTransition = function parseTransition(transitions) {
   if (!transitions) {
     return [];
   }
@@ -142,7 +142,7 @@ function parseTransition(transitions) {
     };
   });
   return transitionList;
-}
+};
 
 var asyncGenerator = function () {
   function AwaitValue(value) {
@@ -324,20 +324,7 @@ var UnitUtils = function UnitUtils() {
     return '' + Math.floor(value / total * 100 * Math.pow(10, decimal)) / Math.pow(10, decimal) + _this.UNIT.PERCENT;
   };
 };
-var unitUtils = new UnitUtils();
+var index = new UnitUtils();
 
-var index = {
-  conditionallyUpdateScrollbar: conditionallyUpdateScrollbar,
-  getOriginalBodyPadding: getOriginalBodyPadding,
-  getScrollbarWidth: getScrollbarWidth,
-  getTetherAttachments: getTetherAttachments,
-  isBodyOverflowing: isBodyOverflowing,
-  setScrollbarWidth: setScrollbarWidth,
-  tetherAttachements: tetherAttachements,
-  toHashCode: toHashCode,
-  parseTransition: parseTransition,
-  unitUtils: unitUtils
-};
-
-export default index;
+export { conditionallyUpdateScrollbar, getOriginalBodyPadding, getScrollbarWidth, getTetherAttachments, isBodyOverflowing, setScrollbarWidth, tetherAttachements, toHashCode, parseTransition, index as unitUtils };
 //# sourceMappingURL=bootstrap-styled-utils.es.js.map
