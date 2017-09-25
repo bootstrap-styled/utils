@@ -326,5 +326,5 @@ var UnitUtils = function UnitUtils() {
 };
 var index = new UnitUtils();
 
-export { parseTransition, index as unitUtils, getTetherAttachments, tetherAttachements, getScrollbarWidth, setScrollbarWidth, isBodyOverflowing, getOriginalBodyPadding, conditionallyUpdateScrollbar, toHashCode };
+export { conditionallyUpdateScrollbar, getOriginalBodyPadding, getScrollbarWidth, getTetherAttachments, isBodyOverflowing, setScrollbarWidth, tetherAttachements, toHashCode, parseTransition, index as unitUtils };
 //# sourceMappingURL=bootstrap-styled-utils.es.js.map
