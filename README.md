@@ -14,6 +14,7 @@ bootstrap-styled-utils are utils function used in our bootstrap-styled component
 
 ## Table of Contents
 
+  - [Installation](#installation)
   - [Changelog](#changelog)
   - [Utilities](#utilities)
   - [Reminders](#reminders)
@@ -22,6 +23,10 @@ bootstrap-styled-utils are utils function used in our bootstrap-styled component
   - [License](#license)
 
 ---
+
+## Installation
+
+    npm install git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git --save
 
 ## Changelog
 
