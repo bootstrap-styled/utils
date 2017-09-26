@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global['bootstrap-styled-utils'] = {})));
-}(this, (function (exports) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global['bootstrap-styled-utils'] = factory());
+}(this, (function () { 'use strict';
 
 function getTetherAttachments(placement) {
   switch (placement) {
@@ -330,23 +330,22 @@ var UnitUtils = function UnitUtils() {
     return '' + Math.floor(value / total * 100 * Math.pow(10, decimal)) / Math.pow(10, decimal) + _this.UNIT.PERCENT;
   };
 };
-var index = new UnitUtils();
+var unitUtils = new UnitUtils();
 
-var dummy = {};
+var index = {
+  conditionallyUpdateScrollbar: conditionallyUpdateScrollbar,
+  getOriginalBodyPadding: getOriginalBodyPadding,
+  getScrollbarWidth: getScrollbarWidth,
+  getTetherAttachments: getTetherAttachments,
+  isBodyOverflowing: isBodyOverflowing,
+  setScrollbarWidth: setScrollbarWidth,
+  tetherAttachements: tetherAttachements,
+  toHashCode: toHashCode,
+  parseTransition: parseTransition,
+  unitUtils: unitUtils
+};
 
-exports['default'] = dummy;
-exports.conditionallyUpdateScrollbar = conditionallyUpdateScrollbar;
-exports.getOriginalBodyPadding = getOriginalBodyPadding;
-exports.getScrollbarWidth = getScrollbarWidth;
-exports.getTetherAttachments = getTetherAttachments;
-exports.isBodyOverflowing = isBodyOverflowing;
-exports.setScrollbarWidth = setScrollbarWidth;
-exports.tetherAttachements = tetherAttachements;
-exports.toHashCode = toHashCode;
-exports.parseTransition = parseTransition;
-exports.unitUtils = index;
-
-Object.defineProperty(exports, '__esModule', { value: true });
+return index;
 
 })));
 //# sourceMappingURL=bootstrap-styled-utils.js.map
