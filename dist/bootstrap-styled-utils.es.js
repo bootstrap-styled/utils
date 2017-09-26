@@ -324,20 +324,7 @@ var UnitUtils = function UnitUtils() {
     return '' + Math.floor(value / total * 100 * Math.pow(10, decimal)) / Math.pow(10, decimal) + _this.UNIT.PERCENT;
   };
 };
-var unitUtils = new UnitUtils();
+var index = new UnitUtils();
 
-var index = {
-  conditionallyUpdateScrollbar: conditionallyUpdateScrollbar,
-  getOriginalBodyPadding: getOriginalBodyPadding,
-  getScrollbarWidth: getScrollbarWidth,
-  getTetherAttachments: getTetherAttachments,
-  isBodyOverflowing: isBodyOverflowing,
-  setScrollbarWidth: setScrollbarWidth,
-  tetherAttachements: tetherAttachements,
-  toHashCode: toHashCode,
-  parseTransition: parseTransition,
-  unitUtils: unitUtils
-};
-
-export default index;
+export { parseTransition, index as unitUtils, getTetherAttachments, tetherAttachements, getScrollbarWidth, setScrollbarWidth, isBodyOverflowing, getOriginalBodyPadding, conditionallyUpdateScrollbar, toHashCode };
 //# sourceMappingURL=bootstrap-styled-utils.es.js.map
