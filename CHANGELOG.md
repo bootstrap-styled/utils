@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2017-09-26
+
+- Release as v1, no change.
+
 ## [0.0.6] - 2017-09-25
 
 - Added dummy default export.
