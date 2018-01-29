@@ -150,7 +150,7 @@
       "global": {
         "statements": 96,
         "branches": 79,
-        "functions": 100,
+        "functions": 90,
         "lines": 96
       }
     },

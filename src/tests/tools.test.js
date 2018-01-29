@@ -6,6 +6,8 @@ import {
   conditionallyUpdateScrollbar,
   getTetherAttachments,
   getScrollbarWidth,
+  createChainedFunction,
+  pick,
 } from '../tools';
 
 describe('tools', () => {
@@ -155,6 +157,31 @@ describe('tools', () => {
       expect(typeof hash).toEqual('number');
       const hash2 = toHashCode(JSON.stringify(getTetherAttachments()));
       expect(hash).toEqual(hash2);
+    });
+  });
+
+  describe('createChainedFunction', () => {
+    it('createChainedFunction should log warning if type of argument not a function"', () => {
+      global.console = { warn: jest.fn() };
+      expect(typeof createChainedFunction(1, 2)).toEqual('function');
+      expect(console.warn).toBeCalled();
+    });
+    it('createChainedFunction should return a new function', () => {
+      let func1;
+      func1 = (a, b) => a + b;
+      const func2 = (a, b) => a - b;
+      func1 = createChainedFunction(func2, func1);
+      expect(typeof func1).toEqual('function');
+    });
+  });
+
+  describe('pick', () => {
+    it('pick should be a function', () => {
+      expect(typeof pick).toEqual('function');
+    });
+    it('pick should returna  new object with the specified keys', () => {
+      const obj = { a: 1, b: 2 };
+      expect(pick(obj, 'a')).toEqual({ a: 1 });
     });
   });
 });

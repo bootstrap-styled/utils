@@ -152,3 +152,44 @@ export function toHashCode(str) {
   }
   return hash;
 }
+
+/**
+ * Safe chained function
+ *
+ * Will only create a new function if needed,
+ * otherwise will pass back existing functions or null.
+ *
+ */
+
+export function createChainedFunction(...funcs) {
+  return funcs.filter((func) => func != null).reduce(
+    (acc, func) => {
+      console.warn(
+        typeof func === 'function',
+        'Material-UI: invalid Argument Type, must only provide functions, undefined, or null.',
+      );
+      return function chainedFunction(...args) {
+        acc.apply(this, args);
+        func.apply(this, args);
+      };
+    },
+    () => {},
+  );
+}
+
+/**
+ * Returns a filtered copy of an object with only the specified keys.
+ */
+export function pick(obj, keys) {
+  const pickKeys = Array.isArray(keys) ? keys : [keys];
+  let { length } = pickKeys;
+  let key;
+  const result = {};
+
+  while (length > 0) {
+    length -= 1;
+    key = pickKeys[length];
+    result[key] = obj[key];
+  }
+  return result;
+}
