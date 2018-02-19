@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.2] - 2018-02-??
+
+- TODO: write change before preparing next tag
+
 ## [1.0.1] - 2019-01-30
 
 - Added function `createChainedFunction` which only create a new function if needed, otherwise will pass back existing functions or null.
