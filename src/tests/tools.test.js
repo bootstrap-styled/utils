@@ -161,11 +161,6 @@ describe('tools', () => {
   });
 
   describe('createChainedFunction', () => {
-    it('createChainedFunction should log warning if type of argument not a function"', () => {
-      global.console = { warn: jest.fn() };
-      expect(typeof createChainedFunction(1, 2)).toEqual('function');
-      expect(console.warn).toBeCalled();
-    });
     it('createChainedFunction should return a new function', () => {
       let func1;
       func1 = (a, b) => a + b;

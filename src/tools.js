@@ -163,15 +163,9 @@ export function toHashCode(str) {
 
 export function createChainedFunction(...funcs) {
   return funcs.filter((func) => func != null).reduce(
-    (acc, func) => {
-      console.warn(
-        typeof func === 'function',
-        'Material-UI: invalid Argument Type, must only provide functions, undefined, or null.',
-      );
-      return function chainedFunction(...args) {
-        acc.apply(this, args);
-        func.apply(this, args);
-      };
+    (acc, func) => function chainedFunction(...args) {
+      acc.apply(this, args);
+      func.apply(this, args);
     },
     () => {},
   );

@@ -139,14 +139,24 @@ release:
   stage: release
   script:
     # create branch for release version
-    - git checkout -b v${PACKAGE_VERSION}
-    - git push origin v${PACKAGE_VERSION}
+    - git checkout -b ${PACKAGE_VERSION}
+    - git push origin ${PACKAGE_VERSION}
     # tag version
-    - git tag -a -m "new version v${PACKAGE_VERSION}" v${PACKAGE_VERSION}
+    - git tag -a -m "new version ${PACKAGE_VERSION}" ${PACKAGE_VERSION}
     - git push --tags
     # prepare next dev version
     - git checkout dev
-    - npm version patch
+    - git pull origin dev
+    - git reset HEAD --hard
+    - VERSION=$(npm version patch -m "preparing next version %s")
+    - DATE=`date +%Y-%m-??`
+    - PATTERN="All notable changes to this project will be documented in this file"
+    - sed -i "/$PATTERN/a- TODO":" write change before preparing next tag" CHANGELOG.md
+    - sed -i "/$PATTERN/G" CHANGELOG.md
+    - sed -i "/$PATTERN/a## [$VERSION] - $DATE" CHANGELOG.md
+    - sed -i "/$PATTERN/G" CHANGELOG.md
+    - git add -A
+    - git commit -m "Add todo next version $VERSION in CHANGELOG.md"
     - git push origin HEAD:dev
   dependencies:
     - build
