@@ -17,9 +17,7 @@ bootstrap-styled-utils are utils function used in our bootstrap-styled component
   - [Installation](#installation)
   - [Changelog](#changelog)
   - [Utilities](#utilities)
-  - [Reminders](#reminders)
   - [Quick start](#quick-start)
-  - [Release](#release)
   - [License](#license)
 
 ---

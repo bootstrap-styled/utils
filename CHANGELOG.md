@@ -8,6 +8,11 @@ All notable changes to this project will be documented in this file.
 - License MIT.
 - Add dependency [ci-publish](https://www.npmjs.com/package/ci-publish) ^1.3.1.
 
+## [1.0.1] - 2019-01-30
+
+- Added function `createChainedFunction` which only create a new function if needed, otherwise will pass back existing functions or null.
+- Added function `pick` which returns a filtered copy of an object with only the specified keys.
+
 ## [1.0.0] - 2017-09-26
 
 - Release as v1, no change.

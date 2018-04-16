@@ -119,6 +119,34 @@ function toHashCode(str) {
   }
   return hash;
 }
+function createChainedFunction() {
+  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
+    funcs[_key] = arguments[_key];
+  }
+  return funcs.filter(function (func) {
+    return func != null;
+  }).reduce(function (acc, func) {
+    return function chainedFunction() {
+      for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+      acc.apply(this, args);
+      func.apply(this, args);
+    };
+  }, function () {});
+}
+function pick(obj, keys) {
+  var pickKeys = Array.isArray(keys) ? keys : [keys];
+  var length = pickKeys.length;
+  var key = void 0;
+  var result = {};
+  while (length > 0) {
+    length -= 1;
+    key = pickKeys[length];
+    result[key] = obj[key];
+  }
+  return result;
+}
 
 var parseTransition = function parseTransition(transitions) {
   if (!transitions) {
@@ -342,6 +370,8 @@ exports.isBodyOverflowing = isBodyOverflowing;
 exports.getOriginalBodyPadding = getOriginalBodyPadding;
 exports.conditionallyUpdateScrollbar = conditionallyUpdateScrollbar;
 exports.toHashCode = toHashCode;
+exports.createChainedFunction = createChainedFunction;
+exports.pick = pick;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
