@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-styled-utils",
-  "version": "1.0.1",
-  "description": "Library bootstrap-styled-utils description",
+  "version": "1.0.2",
+  "description": "UMD module for helper functions used as utilities in bootstrap-styled",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-utils.es.js",
   "module": "dist/bootstrap-styled-utils.es.js",
@@ -37,14 +37,14 @@
     "url": "https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/issues"
   },
   "files": [
-    "CODE_OF_CONDUCT.md",
+    "LICENSE.md",
     "dist",
     "lib",
     "src"
   ],
-  "keywords": "",
-  "author": "",
-  "license": "UNLICENSED",
+  "keywords": ["styled-components", "bootstrap-styled", "react", "bootstrap", "styled"],
+  "author": "Dimitri Kopriwa <dimitri.kopriwa@yeutech.com>",
+  "license": "MIT",
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb-base",
@@ -112,6 +112,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "ci-publish": "^1.3.1",
     "eslint": "^4.6.1",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [?NEXT?] - ????-??-??
+
+- Protected.
+- License MIT.
+- Add dependency [ci-publish](https://www.npmjs.com/package/ci-publish) ^1.3.1.
+
 ## [1.0.1] - 2019-01-30
 
 - Added function `createChainedFunction` which only create a new function if needed, otherwise will pass back existing functions or null.
