@@ -4,13 +4,13 @@ bootstrap-styled-utils are utils function used in our bootstrap-styled component
 
 **Master**
 
-[![build status](https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/badges/master/build.svg)](https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/commits/master)
-[![coverage report](https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/badges/master/coverage.svg)](https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/commits/master)
+[![build status](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/badges/master/build.svg)](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/commits/master)
+[![coverage report](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/badges/master/coverage.svg)](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/commits/master)
 
 **Dev**
 
-[![build status](https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/badges/dev/build.svg)](https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/commits/dev)
-[![coverage report](https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/badges/dev/coverage.svg)](https://module.kopaxgroup.com/styled-components/bootstrap-styled-utils/commits/dev)
+[![build status](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/badges/dev/build.svg)](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/commits/dev)
+[![coverage report](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/badges/dev/coverage.svg)](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/commits/dev)
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ bootstrap-styled-utils are utils function used in our bootstrap-styled component
 
 Clone project
 
-    git clone ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git
+    git clone ssh://git@module.kopaxgroup.com:20024/bootstrap-styled/bootstrap-styled-utils.git
 
 Install dependencies
 
