@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-styled-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "UMD module for helper functions used as utilities in bootstrap-styled",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-utils.es.js",
