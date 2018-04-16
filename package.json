@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-styled-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "UMD module for helper functions used as utilities in bootstrap-styled",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-utils.es.js",
@@ -42,7 +42,13 @@
     "lib",
     "src"
   ],
-  "keywords": ["styled-components", "bootstrap-styled", "react", "bootstrap", "styled"],
+  "keywords": [
+    "styled-components",
+    "bootstrap-styled",
+    "react",
+    "bootstrap",
+    "styled"
+  ],
   "author": "Dimitri Kopriwa <dimitri.kopriwa@yeutech.com>",
   "license": "MIT",
   "eslintConfig": {
