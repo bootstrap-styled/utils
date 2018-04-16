@@ -27,6 +27,7 @@
     "lint": "eslint src",
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
+    "ci-publish": "ci-publish",
     "rollup-umd": "node ./internal/rollup-umd --"
   },
   "repository": {
@@ -42,7 +43,13 @@
     "lib",
     "src"
   ],
-  "keywords": ["styled-components", "bootstrap-styled", "react", "bootstrap", "styled"],
+  "keywords": [
+    "styled-components",
+    "bootstrap-styled",
+    "react",
+    "bootstrap",
+    "styled"
+  ],
   "author": "Dimitri Kopriwa <dimitri.kopriwa@yeutech.com>",
   "license": "MIT",
   "eslintConfig": {
