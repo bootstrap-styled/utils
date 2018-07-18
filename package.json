@@ -1,11 +1,6 @@
 {
-<<<<<<< Updated upstream
   "name": "bootstrap-styled-utils",
   "version": "1.0.3",
-=======
-  "name": "@bootstrap-styled/utils",
-  "version": "1.0.2",
->>>>>>> Stashed changes
   "description": "UMD module for helper functions used as utilities in bootstrap-styled",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/utils.es.js",
