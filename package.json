@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "UMD module for helper functions used as utilities for bootstrap-styled",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/utils.es.js",
@@ -10,15 +10,14 @@
     "last 2 versions"
   ],
   "scripts": {
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
     "prebuild": "npm run build:clean",
     "build": "npm run build:lib && npm run build:dist",
     "prebuild:lib": "rimraf lib/*",
-    "build:lib": "BABEL_ENV=production babel --out-dir lib src",
+    "build:lib": "BABEL_ENV=production babel --out-dir lib src --copy-files",
     "prebuild:dist": "rimraf dist/*",
     "build:clean": "rimraf lib/* dist/*",
-    "build:dist": "rollup -c && rollup -c --environment PRODUCTION",
+    "build:dist:dev": "rollup -c",
+    "build:dist": "rollup -c --environment PRODUCTION",
     "build:readme": "toctoc README.md -w",
     "build:dist:watch": "rollup -c --watch",
     "build:lib:watch": "npm run build:lib -- --watch",
@@ -28,11 +27,13 @@
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src",
     "prepublish": "npm run build",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@module.kopaxgroup.com:20024/bootstrap-styled/bootstrap-styled-utils.git"
+    "url": "https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils.git"
   },
   "bugs": {
     "url": "https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/issues"
@@ -204,6 +205,7 @@
   "private": false,
   "release": {
     "branch": "master",
+    "publishConfig": { "access":  "public" },
     "success": false,
     "fail": false,
     "npmPublish": true,
