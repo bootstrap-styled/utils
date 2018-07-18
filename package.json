@@ -51,9 +51,7 @@
     "bootstrap",
     "styled"
   ],
-  "authors": [
-    "Dimitri Kopriwa <dimitri.kopriwa@yeutech.com>"
-  ],
+  "author": "Dimitri Kopriwa <dimitri.kopriwa@yeutech.com>",
   "license": "MIT",
   "eslintConfig": {
     "parser": "babel-eslint",
