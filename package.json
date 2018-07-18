@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-styled-utils",
+  "name": "@bootstrap-styled/utils",
   "version": "1.0.3",
   "description": "UMD module for helper functions used as utilities in bootstrap-styled",
   "main": "lib/index.js",
@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled/utils.git"
+    "url": "ssh://git@module.kopaxgroup.com:20024/bootstrap-styled/bootstrap-styled-utils.git"
   },
   "bugs": {
-    "url": "https://module.kopaxgroup.com/styled-components/bootstrap-styled/utils/issues"
+    "url": "https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-utils/issues"
   },
   "files": [
     "LICENSE.md",
