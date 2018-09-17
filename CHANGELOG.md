@@ -1,3 +1,10 @@
+## [1.0.1](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.0...v1.0.1) (2018-09-17)
+
+
+### Bug Fixes
+
+* **package.json:** added testUrl to jest config to fix localstorage bug ([c7d2c0e](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/c7d2c0e))
+
 # 1.0.0 (2018-09-17)
 
 
