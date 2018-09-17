@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [?NEXT?] - ????-??-??
+
+- TODO: write changelog before preparing next tag
+
 ## [v1.0.2] - 2018-09-17
 
 - Upgrade ci docker image.
