@@ -88,4 +88,3 @@ class UnitUtils {
 }
 
 export default new UnitUtils();
-
