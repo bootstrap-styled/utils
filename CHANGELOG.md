@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [?NEXT?] - ????-??-??
 
+- TODO: write changelog before preparing next tag
+
+## [v1.0.2] - 2018-09-17
+
+- Upgrade ci docker image.
+
+## [v1.0.2] - 2018-04-16
+
 - Protected.
 - License MIT.
 - Add dependency [ci-publish](https://www.npmjs.com/package/ci-publish) ^1.3.1.
