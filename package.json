@@ -110,7 +110,7 @@
     "@semantic-release/git": "^7.0.0",
     "@semantic-release/gitlab": "^2.1.4",
     "@semantic-release/npm": "^4.0.0",
-    "@yeutech-lab/rollup-umd-documentation": "^2.3.18",
+    "@yeutech-lab/rollup-umd-documentation": "^2.3.19-fixed-bs-dependencies",
     "@yeutech/rollup-umd-ci-build": "^1.0.5",
     "@yeutech/rollup-umd-ci-deploy": "^1.0.7",
     "@yeutech/rollup-umd-ci-release": "^1.0.5",
@@ -201,7 +201,7 @@
   "peerDependencies": {},
   "publishConfig": {
     "tag": "latest",
-    "registry": "https://npm.kopaxgroup.com"
+    "registry": "https://registry.npmjs.org"
   },
   "private": false,
   "release": {
