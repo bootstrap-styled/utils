@@ -194,14 +194,12 @@
   "peerDependencies": {},
   "publishConfig": {
     "tag": "latest",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "private": false,
   "release": {
     "branch": "master",
-    "publishConfig": {
-      "access": "public"
-    },
     "success": false,
     "fail": false,
     "npmPublish": true,
