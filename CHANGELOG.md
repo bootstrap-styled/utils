@@ -1,3 +1,10 @@
+## [1.0.3](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.2...v1.0.3) (2018-10-02)
+
+
+### Bug Fixes
+
+* **package.json:** npm repo + rollup-umd-doc 2.3.19 ([e737c60](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/e737c60))
+
 ## [1.0.2](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.1...v1.0.2) (2018-09-26)
 
 
