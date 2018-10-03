@@ -185,8 +185,7 @@
     ]
   },
   "pre-commit": [
-    "build:readme",
-    "lint-staged"
+    "build:readme"
   ],
   "dependencies": {},
   "peerDependencies": {},
