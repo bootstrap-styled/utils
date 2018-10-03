@@ -1,3 +1,14 @@
+## [1.0.5](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.4...v1.0.5) (2018-10-03)
+
+
+### Bug Fixes
+
+* **deps:** remove ci-publish devDependencies (replaced with semantic-release) ([c44ee7c](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/c44ee7c))
+* **gitlab-ci:** aded GIT variable ([787da60](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/787da60))
+* **package.json:** udpated eslint ([78917e5](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/78917e5))
+* **readme:** readme was having wrong toc pattern (trim space) ([bace3bb](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/bace3bb))
+* **yml:** ci eslint ([1251eb8](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/1251eb8))
+
 ## [1.0.4](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.3...v1.0.4) (2018-10-02)
 
 
