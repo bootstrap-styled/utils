@@ -1,3 +1,24 @@
+## [1.0.4](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.3...v1.0.4) (2018-10-02)
+
+
+### Bug Fixes
+
+* **package.json:** corrected wrong configuration with publishConfig ([f099e0c](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/f099e0c))
+
+## [1.0.3](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.2...v1.0.3) (2018-10-02)
+
+
+### Bug Fixes
+
+* **package.json:** npm repo + rollup-umd-doc 2.3.19 ([e737c60](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/e737c60))
+
+## [1.0.2](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.1...v1.0.2) (2018-09-26)
+
+
+### Bug Fixes
+
+* **packge.json:** remnoved rollup-documentation ([26b15c7](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/26b15c7))
+
 ## [1.0.1](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.0...v1.0.1) (2018-09-17)
 
 
