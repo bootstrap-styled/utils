@@ -17,8 +17,7 @@ Utils function used in our bootstrap-styled components.
   - [Documentation](#documentation)
   - [License](#license)
 
----
-## Documentation
+---## Documentation
 
   - View bootstrap-styled [HTML documentation](https://bootstrap-styled.yeutech.com)
 
