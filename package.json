@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/utils.es.js",
   "module": "dist/@bootstrap-styled/utils.es.js",
-  "homepage": "https://bootstrap-styled.github.io/utils",
+  "homepage": "https://bootstrap-styled.yeutech.com/utils",
   "browserslist": [
     "IE >= 9",
     "last 2 versions"
