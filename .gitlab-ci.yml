@@ -17,6 +17,8 @@ build:
   stage: build
   script:
     - npx @yeutech/rollup-umd-ci-build
+    - npm ls
+    - npm ls eslint
   cache:
     key: ${CI_BUILD_REF_NAME}
     paths:
