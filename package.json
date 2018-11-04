@@ -247,5 +247,24 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "transitive": {
+    "name": "utils",
+    "scope": "bootstrap-styled",
+    "scopedName": "@bootstrap-styled/utils",
+    "jsnext:main": "dist/@bootstrap-styled/utils.es.js",
+    "module": "dist/@bootstrap-styled/utils.es.js",
+    "homepage": "https://bootstrap-styled.github.io/utils",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/bootstrap-styled/utils.git"
+    },
+    "bugs": {
+      "url": "https://github.com/bootstrap-styled/utils/issues"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org"
+    }
   }
 }
