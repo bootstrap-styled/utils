@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/bootstrap-styled/utils/compare/v1.6.0...v1.6.1) (2018-11-05)
+
+
+### Bug Fixes
+
+* **release:** GitHub release https://github.com/bootstrap-styled/utils ([c6c9cbf](https://github.com/bootstrap-styled/utils/commit/c6c9cbf))
+
 # [1.6.0](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.5.1...v1.6.0) (2018-11-05)
 
 
