@@ -79,6 +79,6 @@ jobs:
       deploy:
         - provider: pages
           skip_cleanup: true
-          github_token: $GH_TOKEN # Set in the settings page of your repository, as a secure variable
+          github_token: $GH_TOKEN
           keep_history: true
           local_dir: public/
