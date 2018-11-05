@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/utils",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "UMD module for helper functions used as utilities for bootstrap-styled and other related modules",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/utils.es.js",
@@ -30,7 +30,8 @@
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "postinstall": "node -e \"console.log('\\u001b[31m@bootstrap-styled/utils is deprecated, use @bootstrap-styled/utils instead.')\" || exit 0"
   },
   "repository": {
     "type": "git",

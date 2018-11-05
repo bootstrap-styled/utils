@@ -1,3 +1,30 @@
+# [1.1.0](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.4...v1.1.0) (2018-11-05)
+
+
+### Bug Fixes
+
+* **deps:** remove ci-publish devDependencies (replaced with semantic-release) ([c44ee7c](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/c44ee7c))
+* **github:** publish set to public ([fffb884](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/fffb884))
+* **gitlab-ci:** aded GIT variable ([787da60](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/787da60))
+* **package.json:** udpated eslint ([78917e5](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/78917e5))
+* **readme:** readme was having wrong toc pattern (trim space) ([bace3bb](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/bace3bb))
+* **travis:** added .travis.yml ([57e6c20](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/57e6c20))
+* **travis:** remove comment ([2d8d286](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/2d8d286))
+* **travis:** remove comment ([64b6265](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/64b6265))
+* **travis:** remove comment ([a6ec29e](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/a6ec29e))
+* **yml:** ci eslint ([1251eb8](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/1251eb8))
+
+
+### Features
+
+* **github:** release to gh ([2063ace](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/2063ace))
+* **github:** release to gh ([c3ca2e5](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/c3ca2e5))
+
+
+### Performance Improvements
+
+* **release:** github ([aec87fb](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/aec87fb))
+
 ## [1.0.4](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.3...v1.0.4) (2018-10-02)
 
 
