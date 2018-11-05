@@ -1,3 +1,11 @@
+# [1.5.0](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.4.0...v1.5.0) (2018-11-05)
+
+
+### Features
+
+* **gh:** release to GH ([d5255a9](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/d5255a9))
+* **gh:** release to GH ([275dfa5](https://module.kopaxgroup.com/bootstrap-styled/utils/commit/275dfa5))
+
 ## [1.0.4](https://module.kopaxgroup.com/bootstrap-styled/utils/compare/v1.0.3...v1.0.4) (2018-10-02)
 
 
