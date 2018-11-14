@@ -5,22 +5,20 @@
     "**/*.spec.{js,jsx,ts,tsx}",
     "**/*.d.ts"
   ],
+  "pagePerSection": true,
   "sections": [
     {
       "name": "Introduction",
-      "content": "docs/introduction.md"
-    },
-    {
-      "name": "Prerequisite",
-      "content": "docs/prerequisite.md"
-    },
-    {
-      "name": "Getting started",
-      "content": "docs/getting-started.md",
+      "content": "docs/introduction.md",
       "sections": [
         {
+          "name": "Prerequisite",
+          "content": "docs/prerequisite.md"
+        },
+        {
           "name": "Installation",
-          "content": "docs/installation.md"
+          "content": "docs/installation.md",
+          "description": "Discover how to install `bootstrap-styled`"
         },
         {
           "name": "Configuration",
@@ -29,8 +27,16 @@
       ]
     },
     {
-      "name": "UI",
-      "content": "docs/ui.md"
+      "name": "unitUtils",
+      "content": "docs/unitUtils.md"
+    },
+    {
+      "name": "parseTransition",
+      "content": "docs/parseTransition.md"
+    },
+    {
+      "name": "tools",
+      "content": "docs/tools.md"
     },
     {
       "name": "FAQ",
