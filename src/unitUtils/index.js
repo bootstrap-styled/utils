@@ -54,10 +54,10 @@ class UnitUtils {
    * @returns {String} a unit.
    * @example
    * import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
-   * const { detectUnit, rmUnit, toPercent } = unitUtils;
+   * const { detectUnit } = unitUtils;
    *
-   * $spacer = '1rem';
-   * const detectedUnit = detectUnit($spacer);
+   * const spacer = '1rem';
+   * const detectedUnit = detectUnit(spacer);
    *
    * // OUTPUT 'rem'
    */
@@ -87,7 +87,12 @@ class UnitUtils {
    * @param {String} unit
    * @returns {Number} without it's unit
    * @example
-   * '$spacer-halved' = rmUnit($spacer, detectedUnit) / 2 + detectedUnit);
+   * import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
+   * const { detectUnit, rmUnit } = unitUtils;
+   *
+   * const spacer = '1rem';
+   * const spacerHalved' = rmUnit(spacer, detectedUnit) / 2 + detectedUnit);
+   *
    * // OUTPUT '.5rem'
    */
   rmUnit = (value, unit) => {
@@ -105,8 +110,12 @@ class UnitUtils {
    * @param {Number} decimal (default: 2)
    * @returns {string} percentage value
    * @example
-   * '$spacer-halved-percentage' = toPercent(rmUnit(toPercent));
-   * // OUTPUT '50%'
+   * import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
+   * const { toPercent } = unitUtils;
+   *
+   *  const percentage = toPercent(20, 100, 10);
+   *
+   * // OUTPUT '20%'
    */
   toPercent = (value, total = 100, decimal = 2) => { // eslint-disable-line arrow-body-style
     return `${Math.floor((value / total * 100) * (10 ** decimal)) / (10 ** decimal)}${this.UNIT.PERCENT}`; // eslint-disable-line no-mixed-operators

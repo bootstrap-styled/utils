@@ -33,10 +33,10 @@ Return the unit from a string by priority : px/rem/em/percent
 
 ```javascript
 import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
-const { detectUnit, rmUnit, toPercent } = unitUtils;
+const { detectUnit } = unitUtils;
 
-$spacer = '1rem';
-const detectedUnit = detectUnit($spacer);
+const spacer = '1rem';
+const detectedUnit = detectUnit(spacer);
 
 // OUTPUT 'rem'
 ```
@@ -55,7 +55,12 @@ Convert a value string to float. If unit is undefined, it will try to guess it's
 ### Examples
 
 ```javascript
-'$spacer-halved' = rmUnit($spacer, detectedUnit) / 2 + detectedUnit);
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
+const { detectUnit, rmUnit } = unitUtils;
+
+const spacer = '1rem';
+const spacerHalved' = rmUnit(spacer, detectedUnit) / 2 + detectedUnit);
+
 // OUTPUT '.5rem'
 ```
 
@@ -75,8 +80,12 @@ toPercent
 ### Examples
 
 ```javascript
-'$spacer-halved-percentage' = toPercent(rmUnit(toPercent));
-// OUTPUT '50%'
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
+const { toPercent } = unitUtils;
+
+ const percentage = toPercent(20, 100, 10);
+
+// OUTPUT '20%'
 ```
 
 Returns **[string][1]** percentage value
