@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/bootstrap-styled/utils/compare/v1.6.3...v1.6.4) (2018-12-05)
+
+
+### Bug Fixes
+
+* **documentation:** corrected wrong exmaples and ribbon. ([6043b71](https://github.com/bootstrap-styled/utils/commit/6043b71))
+
 ## [1.6.3](https://github.com/bootstrap-styled/utils/compare/v1.6.2...v1.6.3) (2018-12-05)
 
 
