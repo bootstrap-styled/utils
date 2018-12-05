@@ -154,6 +154,7 @@ export function toHashCode(str) {
 }
 
 /**
+ * https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/utils/helpers.js
  * Safe chained function
  *
  * Will only create a new function if needed,

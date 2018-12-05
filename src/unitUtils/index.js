@@ -11,8 +11,21 @@ class UnitUtils {
   };
 
   /**
-   * Math operations accepting units value and return
-   * @type {{addition: math.addition, substract: math.subtract, multiply: math.multiply, divide: math.divide}}
+   * @public
+   * @description Math operations accepting units value and return calculated result with unit.
+   * @example
+   * import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
+   *
+   * const { math } = unitUtils;
+   *
+   * const add = math.addition('15px' + '23px');
+   * // OUTPUT '38px';
+   * const sub = math.substract('1.5em' + '2.3em');
+   * // OUTPUT '3.8em';
+   * const mult = math.multiply('15px' * 0.5);
+   * // OUTPUT '7.5px';
+   * const div = math.divide('15px' / 5);
+   * // OUTPUT '3px';
    */
   math = {
     addition: function addition(a, b) {
@@ -34,11 +47,19 @@ class UnitUtils {
   };
 
   /**
-   * detectUnit :
-   * return the unit from a string by priority : px/rem/em/percent
-   * @param value
+   * @public
+   * @description Return the unit from a string by priority : px/rem/em/percent
+   * @param {String} value
    * @throw {Error} if unit can't be detected
-   * @returns {*}
+   * @returns {String} a unit.
+   * @example
+   * import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
+   * const { detectUnit, rmUnit, toPercent } = unitUtils;
+   *
+   * $spacer = '1rem';
+   * const detectedUnit = detectUnit($spacer);
+   *
+   * // OUTPUT 'rem'
    */
   detectUnit = (value) => {
     let ext;
@@ -60,13 +81,14 @@ class UnitUtils {
   }
 
   /**
-   * rmUnit :
-   * Convert a value string to float
-   * If unit is undefined, it will try to guess it's value using {detectUnit}
-   *
-   * @param value
-   * @param unit
+   * @public
+   * @description Convert a value string to float. If unit is undefined, it will try to guess it's value using {detectUnit}
+   * @param {String} value
+   * @param {String} unit
    * @returns {Number} without it's unit
+   * @example
+   * '$spacer-halved' = rmUnit($spacer, detectedUnit) / 2 + detectedUnit);
+   * // OUTPUT '.5rem'
    */
   rmUnit = (value, unit) => {
     const valueStr = value.toString();
@@ -76,11 +98,15 @@ class UnitUtils {
   }
 
   /**
-   * toPercent
-   * @param value
-   * @param total (default: 100)
-   * @param decimal (default: 2)
+   * @public
+   * @description toPercent
+   * @param {Number} value
+   * @param {Number} [input=100]
+   * @param {Number} decimal (default: 2)
    * @returns {string} percentage value
+   * @example
+   * '$spacer-halved-percentage' = toPercent(rmUnit(toPercent));
+   * // OUTPUT '50%'
    */
   toPercent = (value, total = 100, decimal = 2) => { // eslint-disable-line arrow-body-style
     return `${Math.floor((value / total * 100) * (10 ** decimal)) / (10 ** decimal)}${this.UNIT.PERCENT}`; // eslint-disable-line no-mixed-operators

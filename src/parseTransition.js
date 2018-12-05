@@ -1,6 +1,13 @@
 /**
- * From a transition css value (multipel transition can be declarated with a  comma separated  list)
- * @param transitions
+ * @public
+ * @description Used to extract parameters from a css animation. Multiple transition can be declared with a comma separated  list)
+ * @param {String} transitions
+ * @example
+ * import parseTransition from '@bootstrap-styled/utils/lib/parseTransition';
+ *
+ * parseTransition(['height .35s ease', 'fade .5 ease-out']);
+ *
+ * // OUTPUT ['height', '.35s', 'ease', 'fade', '.5', 'ease-out']
  * @returns {Array} will return an array of transition.
  */
 const parseTransition = (transitions) => {
