@@ -1,3 +1,11 @@
+## [1.6.3](https://github.com/bootstrap-styled/utils/compare/v1.6.2...v1.6.3) (2018-12-05)
+
+
+### Bug Fixes
+
+* **dependencies:** added missing webpack dependency. ([79d6927](https://github.com/bootstrap-styled/utils/commit/79d6927))
+* **misc:** removed useless console.log(). ([843f939](https://github.com/bootstrap-styled/utils/commit/843f939))
+
 ## [1.6.2](https://github.com/bootstrap-styled/utils/compare/v1.6.1...v1.6.2) (2018-12-05)
 
 
