@@ -5,7 +5,6 @@
     "**/*.spec.{js,jsx,ts,tsx}",
     "**/*.d.ts"
   ],
-  "pagePerSection": true,
   "sections": [
     {
       "name": "Introduction",
@@ -27,11 +26,11 @@
       ]
     },
     {
-      "name": "unitUtils",
+      "name": "Calculations",
       "content": "docs/unitUtils.md"
     },
     {
-      "name": "parseTransition",
+      "name": "Parsing",
       "content": "docs/parseTransition.md"
     },
     {
