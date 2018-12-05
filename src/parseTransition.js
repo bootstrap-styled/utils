@@ -5,9 +5,10 @@
  * @example
  * import parseTransition from '@bootstrap-styled/utils/lib/parseTransition';
  *
- * parseTransition(['height .35s ease', 'fade .5 ease-out']);
+ * const parsedTransition = parseTransition(['height .35s ease', 'fade .5 ease-out']);
  *
- * // OUTPUT ['height', '.35s', 'ease', 'fade', '.5', 'ease-out']
+ * // OUTPUT [{ timingFunction: 'height', duration: '.35s', property: 'height'}, { timingFunction: 'ease-out', duration: '.5s', property: 'fade'}]
+ *
  * @returns {Array} will return an array of transition.
  */
 const parseTransition = (transitions) => {
