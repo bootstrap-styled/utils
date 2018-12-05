@@ -1,3 +1,11 @@
+## [1.6.2](https://github.com/bootstrap-styled/utils/compare/v1.6.1...v1.6.2) (2018-12-05)
+
+
+### Bug Fixes
+
+* **documentation:** added new [@rollup-umd](https://github.com/rollup-umd)/documentation. ([1270f84](https://github.com/bootstrap-styled/utils/commit/1270f84))
+* **documentation:** added working documentation ([fc8d89f](https://github.com/bootstrap-styled/utils/commit/fc8d89f))
+
 ## [1.6.1](https://github.com/bootstrap-styled/utils/compare/v1.6.0...v1.6.1) (2018-11-05)
 
 
