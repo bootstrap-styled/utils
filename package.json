@@ -22,7 +22,7 @@
     "build:readme": "toctoc README.md -w",
     "build:lib:watch": "npm run build:lib -- --watch",
     "test": "npm run lint && npm run test:web",
-    "test:web": "NODE_ENV=test TEST_REPORT_PATH=reports jest --coverage",
+    "test:web": "NODE_ENV=test jest --coverage",
     "test:clean": "rimraf ./coverage",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src",
@@ -179,6 +179,11 @@
     ],
     "testRegex": "tests/.*\\.test\\.js$",
     "testResultsProcessor": "jest-sonar-reporter"
+  },
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-report.xml",
+    "indent": 2
   },
   "lint-staged": {
     "*.js": [
