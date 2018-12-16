@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/bootstrap-styled/utils/compare/v1.7.0...v1.7.1) (2018-12-16)
+
+
+### Bug Fixes
+
+* **dependencies:** updated babel dependencies ([a89fb41](https://github.com/bootstrap-styled/utils/commit/a89fb41))
+
 # [1.7.0](https://github.com/bootstrap-styled/utils/compare/v1.6.4...v1.7.0) (2018-12-16)
 
 
