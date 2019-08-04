@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/bootstrap-styled/utils/compare/v1.7.1...v1.8.0) (2019-08-04)
+
+
+### Features
+
+* **typescript:** added typescript definition ([31a719b](https://github.com/bootstrap-styled/utils/commit/31a719b))
+
 ## [1.7.1](https://github.com/bootstrap-styled/utils/compare/v1.7.0...v1.7.1) (2018-12-16)
 
 
