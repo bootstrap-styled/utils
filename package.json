@@ -127,7 +127,7 @@
     "babel-plugin-array-includes": "^2.0.3",
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "eslint": "^5.10.0",
-    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.14.0",
     "jest-cli": "^23.6.0",
     "jest-sonar-reporter": "^2.0.0",
