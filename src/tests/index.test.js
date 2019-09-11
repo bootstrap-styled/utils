@@ -1,4 +1,4 @@
-const exports = require('../index');
+const exports = require('..');
 
 describe('exports', () => {
   Object.keys(exports).forEach((key) => {
