@@ -1,3 +1,30 @@
+# [1.8.0](https://github.com/bootstrap-styled/utils/compare/v1.7.1...v1.8.0) (2019-08-04)
+
+
+### Features
+
+* **typescript:** added typescript definition ([31a719b](https://github.com/bootstrap-styled/utils/commit/31a719b))
+
+## [1.7.1](https://github.com/bootstrap-styled/utils/compare/v1.7.0...v1.7.1) (2018-12-16)
+
+
+### Bug Fixes
+
+* **dependencies:** updated babel dependencies ([a89fb41](https://github.com/bootstrap-styled/utils/commit/a89fb41))
+
+# [1.7.0](https://github.com/bootstrap-styled/utils/compare/v1.6.4...v1.7.0) (2018-12-16)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade [@rollup-umd](https://github.com/rollup-umd)/documentation ([67edbce](https://github.com/bootstrap-styled/utils/commit/67edbce))
+* **test:** fix test report path ([c6854db](https://github.com/bootstrap-styled/utils/commit/c6854db))
+
+
+### Features
+
+* **dependencies:** babel7, latest rollup, latest jest... ([0ff563d](https://github.com/bootstrap-styled/utils/commit/0ff563d))
+
 ## [1.6.4](https://github.com/bootstrap-styled/utils/compare/v1.6.3...v1.6.4) (2018-12-05)
 
 
