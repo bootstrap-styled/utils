@@ -136,7 +136,7 @@
     "pre-commit": "^1.2.2",
     "react-styleguidist": "^9.1.7",
     "rimraf": "^2.6.2",
-    "rollup": "^1.15.6",
+    "rollup": "^2.0.0",
     "semantic-release": "^15.13.0",
     "toctoc": "^0.3.2",
     "webpack": "^4.27.1"
