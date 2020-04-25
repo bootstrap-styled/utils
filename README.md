@@ -10,7 +10,7 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.utils&metric=coverage)](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.utils&metric=coverage) 
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.utils&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.utils&metric=alert_status)
 [![gitter](https://badges.gitter.im/bootstrap-styled/bootstrap-styled.svg)](https://gitter.im/bootstrap-styled)
-[![Greenkeeper badge](https://badges.greenkeeper.io/bootstrap-styled/utils.svg)](https://greenkeeper.io/)
+
 
 UMD module for helper functions used as utilities for bootstrap-styled and other related modules
 
